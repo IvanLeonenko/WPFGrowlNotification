@@ -3,7 +3,7 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:Model="clr-namespace:WPFGrowlNotification"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" mc:Ignorable="d"
-        Title="GrowlNotifiactions" Height="530" Width="300" AllowsTransparency="True" WindowStyle="None" ShowInTaskbar="False" Background="Transparent" Topmost="True" UseLayoutRounding="True">
+        Title="GrowlNotifiactions" Height="530" Width="300" ShowActivated="False" AllowsTransparency="True" WindowStyle="None" ShowInTaskbar="False" Background="Transparent" Topmost="True" UseLayoutRounding="True">
     <Window.Resources>
         <Storyboard x:Key="CollapseStoryboard">
             <DoubleAnimation From="100" To="0" Storyboard.TargetProperty="Height" Duration="0:0:1"/>
@@ -67,5 +67,5 @@
             </DataTemplate.Triggers>
         </DataTemplate>
     </Window.Resources>
-    <ItemsControl x:Name="NotificationsControl" d:DataContext="{d:DesignData Source=DesignTimeNotificationData.xaml}" ItemsSource="{Binding .}" ItemTemplate="{StaticResource MessageTemplate}" />
+    <ItemsControl x:Name="NotificationsControl" FocusVisualStyle="{x:Null}" d:DataContext="{d:DesignData Source=DesignTimeNotificationData.xaml}" ItemsSource="{Binding .}" ItemTemplate="{StaticResource MessageTemplate}" />
 </Window>
