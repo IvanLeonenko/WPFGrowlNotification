@@ -35,11 +35,12 @@ namespace WPFGrowlNotification
         {
             if (Notifications.Contains(notification))
                 Notifications.Remove(notification);
-            if (buffer.Count <= 0)
-                return;
-            Notifications.Add(buffer[0]);
-            buffer.RemoveAt(0);
-
+            if (buffer.Count > 0)
+            {
+                Notifications.Add(buffer[0]);
+                buffer.RemoveAt(0);
+            }
+            
             //Close window if there's nothing to show
             if (Notifications.Count < 1 && IsActive)
                 Close();
