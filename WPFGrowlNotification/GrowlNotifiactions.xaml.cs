@@ -35,6 +35,7 @@ namespace WPFGrowlNotification
         {
             if (Notifications.Contains(notification))
                 Notifications.Remove(notification);
+            
             if (buffer.Count > 0)
             {
                 Notifications.Add(buffer[0]);
@@ -42,8 +43,8 @@ namespace WPFGrowlNotification
             }
             
             //Close window if there's nothing to show
-            if (Notifications.Count < 1 && IsActive)
-                Close();
+            if (Notifications.Count < 1)
+                Hide();
         }
 
         private void NotificationWindowSizeChanged(object sender, SizeChangedEventArgs e)
