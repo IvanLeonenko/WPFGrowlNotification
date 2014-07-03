@@ -9,7 +9,7 @@ namespace WPFGrowlNotification
     {
         private const double topOffset = 20;
         private const double leftOffset = 380;
-        readonly GrowlNotifiactions growlNotifications = new GrowlNotifiactions();
+        readonly GrowlNotifications growlNotifications = new GrowlNotifications();
         
         public MainWindow()
         {

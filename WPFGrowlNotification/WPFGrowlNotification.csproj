@@ -53,7 +53,7 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </DesignData>
-    <Page Include="GrowlNotifiactions.xaml">
+    <Page Include="GrowlNotifications.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -65,8 +65,8 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="GrowlNotifiactions.xaml.cs">
-      <DependentUpon>GrowlNotifiactions.xaml</DependentUpon>
+    <Compile Include="GrowlNotifications.xaml.cs">
+      <DependentUpon>GrowlNotifications.xaml</DependentUpon>
     </Compile>
     <Compile Include="Notification.cs" />
     <Compile Include="MainWindow.xaml.cs">
