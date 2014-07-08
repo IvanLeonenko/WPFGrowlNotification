@@ -23,7 +23,9 @@
                             <ColumnDefinition Width="Auto"></ColumnDefinition>
                             <ColumnDefinition Width="*"></ColumnDefinition>
                         </Grid.ColumnDefinitions>
-                        <Image Grid.RowSpan="2" Source="{Binding Path=ImageUrl}" Margin="4" Width="80"></Image>
+                        <Canvas Grid.RowSpan="2" Margin="4" Width="80" Height="80">
+                            <Path Width="80" Height="80" Stretch="Fill" Fill="#FFFFFF" Data="{Binding IconData}"/>
+                        </Canvas>
                         <TextBlock Grid.Column="1" Text="{Binding Path=Title}"  TextOptions.TextRenderingMode="ClearType" TextOptions.TextFormattingMode="Display" Foreground="White" 
                                    FontFamily="Arial" FontSize="14" FontWeight="Bold" VerticalAlignment="Center"  Margin="2,4,4,2" TextWrapping="Wrap" TextTrimming="CharacterEllipsis" />
                         <Button x:Name="CloseButton" Grid.Column="1" Width="16" Height="16" HorizontalAlignment="Right" Margin="0,0,12,0" Style="{StaticResource CloseButton}" />
