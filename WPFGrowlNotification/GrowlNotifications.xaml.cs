@@ -5,14 +5,14 @@ using System.Windows.Controls;
 
 namespace WPFGrowlNotification
 {
-    public partial class GrowlNotifiactions
+    public partial class GrowlNotifications
     {
         private const byte MAX_NOTIFICATIONS = 4;
         private int count;
         public Notifications Notifications = new Notifications();
         private readonly Notifications buffer = new Notifications();
 
-        public GrowlNotifiactions()
+        public GrowlNotifications()
         {
             InitializeComponent();
             NotificationsControl.DataContext = Notifications;

@@ -56,11 +56,12 @@
                                 <DropShadowEffect ShadowDepth="0" Opacity=".4" BlurRadius="5" Color="Black"/>
                             </Border.Effect>
                             <Grid>
-                                <Image Source="pack://application:,,,/Resources/close.png" IsHitTestVisible="False" Margin="2">
-                                    <Image.Effect>
+                                <Canvas Width="12" Height="12" Clip="F1 M 0,0L 76,0L 76,76L 0,76L 0,0">
+                                    <Canvas.Effect>
                                         <DropShadowEffect Direction="90" ShadowDepth="1" BlurRadius="1"/>
-                                    </Image.Effect>
-                                </Image>
+                                    </Canvas.Effect>
+                                    <Path Width="12" Height="12" Stretch="Fill" Fill="#FFFFFF" Data="{StaticResource CloseIconData}"/>
+                                </Canvas>
                                 <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" RecognizesAccessKey="True"/>
                             </Grid>
                         </Border>

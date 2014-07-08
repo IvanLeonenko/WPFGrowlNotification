@@ -5,7 +5,8 @@
     <Application.Resources>
         <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>
-                <ResourceDictionary Source="Resources\ButtonStyle.xaml"/>
+                <ResourceDictionary Source="Resources/IconData.xaml"/>
+                <ResourceDictionary Source="Resources/ButtonStyle.xaml"/>
             </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>
     </Application.Resources>
