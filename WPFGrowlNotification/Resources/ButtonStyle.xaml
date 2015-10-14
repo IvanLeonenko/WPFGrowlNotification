@@ -56,7 +56,7 @@
                                 <DropShadowEffect ShadowDepth="0" Opacity=".4" BlurRadius="5" Color="Black"/>
                             </Border.Effect>
                             <Grid>
-                                <Image Source="pack://application:,,,/Resources/close.png" IsHitTestVisible="False" Margin="2">
+                                <Image Source="close.png" IsHitTestVisible="False" Margin="2">
                                     <Image.Effect>
                                         <DropShadowEffect Direction="90" ShadowDepth="1" BlurRadius="1"/>
                                     </Image.Effect>
