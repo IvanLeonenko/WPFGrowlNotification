@@ -18,6 +18,19 @@ namespace WPFGrowlNotification
             }
         }
 
+        private string borderColor;
+        public string BorderColor
+        {
+            get { return borderColor; }
+
+            set
+            {
+                if (borderColor == value) return;
+                borderColor = value;
+                OnPropertyChanged("BorderColor");
+            }
+        }
+
         private int id;
         public int Id
         {
@@ -28,19 +41,6 @@ namespace WPFGrowlNotification
                 if (id == value) return;
                 id = value;
                 OnPropertyChanged("Id");
-            }
-        }
-
-        private string imageUrl;
-        public string ImageUrl
-        {
-            get { return imageUrl; }
-
-            set
-            {
-                if (imageUrl == value) return;
-                imageUrl = value;
-                OnPropertyChanged("ImageUrl");
             }
         }
 
